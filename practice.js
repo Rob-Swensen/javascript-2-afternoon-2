@@ -125,14 +125,14 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 function divider(numbersArray){
-  let outcome = [];
-  for(let i = 0; i < numbersArray.length; i++){
+  let array1 = [];
+  let array2 = [];
+    for(let i = 0; i < numbersArray.length; i++){
     if(numbersArray[i] % 2 === 0){
-      outcome.push(i);
-    } else {
-        
+      array1.push(numbersArray[i]);
+    } else { array2.push(numbersArray[i])
     }
-}
+}  return [[...array1], [...array2]]
 }
 
 
