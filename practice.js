@@ -196,6 +196,24 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
 //Code Here
 
+function removeItem(myGroceryList, item){
+  let emptArr = [];
+  if(myGroceryList && item)
+    {for(i = 0; i < myGroceryList.length; i++){
+    if(item === myGroceryList[i]){
+      myGroceryList.splice(i,1)
+    }
+  } return myGroceryList;}
+    else { return emptArr }
+}
+
+function addItem(myGroceryList, item){
+  let emptArr = [];
+  if(myGroceryList && item)
+   {myGroceryList.push(item);
+   return myGroceryList;}
+   else {return emptArr}
+}
 
 
 ////////// PROBLEM 9 //////////
@@ -205,7 +223,12 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
-
+function maker(){
+  let makeArr = [];
+  for(i = 1; i < 216; i++){
+    makeArr.push(i)
+  } return makeArr;
+}
 
 
 ////////// PROBLEM 10 //////////
@@ -221,7 +244,13 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 */
   
 //Code Here
-
+function addTen(numbers){
+   let tenArr = [];
+   for(i = 0; i < numbers.length; i++){
+     tenArr.push(Number(numbers[i]) + 10)
+   } 
+   return tenArr
+}
 
 
 ////////// PROBLEM 11 //////////
@@ -246,7 +275,11 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-
+function longer(arr1, arr2){
+  if(arr1.length > arr2.length){
+    return arr1
+  } else{ return arr2}
+}
 
 
 /*
@@ -258,7 +291,15 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-
+function both(arr1, arr2){
+  let bothArr = [];
+  for(i = 0; i < arr1.length; i++){
+    for(j = 0; j < arr2.length; j++){
+      if(arr1[i] === arr2[j])
+      bothArr.push(arr1[i])
+    }
+  } return bothArr;
+}
 
 
 ////////// PROBLEM 12 //////////
@@ -299,7 +340,10 @@ var colt = {
 */
 
 //Code Here
-
+devMountainEmployees.push(joe);
+devMountainEmployees.push(cahlan);
+devMountainEmployees.push(ryan);
+devMountainEmployees.push(colt);
 
 
 /*
@@ -308,6 +352,12 @@ var colt = {
 */
 
 //Code Here
+
+for(i = 0; i < devMountainEmployees.length; i++){
+  if(devMountainEmployees[i].name === 'Cahlan'){
+    devMountainEmployees.splice(i,1)
+  }
+}
 
 
 
@@ -320,7 +370,6 @@ var colt = {
 */
 
 //Code Here
-
 
 
 /*
@@ -341,7 +390,22 @@ var user1 = {
 // Do not edit the code above.
 
 //Code Here
-
+let users = [{
+  name: 'Mark McIver',
+  email: 'mark.mciver@devmounta.in',
+  password: 'hunter2',
+  username: 'ihazcode'
+}, {
+  name: 'Rob Swensen',
+  email: 'rg.swensen801@gmail.com',
+  password: 'thisisapassword',
+  username: 'rgswense'
+}, {
+  name: 'Ash Swensen',
+  email: 'fakeemail@email.com',
+  password: '1234567',
+  username: 'username234'
+}]
 
 
 /*
@@ -355,7 +419,11 @@ var user1 = {
 */
 
 //Code Here
-
+for(i = 0; i < users.length; i++){
+  if(users[i].email === 'mark.mciver@devmounta.in'){
+    users.splice(i,1)
+  }
+}
 
 
 /*
