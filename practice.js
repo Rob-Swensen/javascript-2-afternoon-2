@@ -146,7 +146,7 @@ var getRandomArbitrary = function() {
 // Do not edit the code above.
 
 /* 
-  var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
+var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
   Above you're given a function (getRandomArbitrary) that will return a random number between 0 and 30.
   There is also a commented out array full of numbers to help you visualize what your function will be receiving.
   Write a function named finder that will take in an array as an argument.
@@ -156,6 +156,16 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
+function finder(numbers){
+  let randomNumber = getRandomArbitrary();
+  let value = false;
+  for(let i = 0; i < numbers.length; i++){
+   if(numbers[i] === randomNumber){
+     value = true;
+   } 
+} 
+return value;
+}
 
 
 
